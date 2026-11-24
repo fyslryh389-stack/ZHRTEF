@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffb6c9">
+<title>إلى زهرتي | من فيصل ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Amiri:wght@400;700&display=swap');
+:root{--pink:#ffb6ca;--rose:#ed789d;--deep:#9d4569;--cream:#fff8f8}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:#71384f;font-family:'Tajawal',sans-serif;background:linear-gradient(135deg,#ffe6ed,#fff1f5 45%,#f8d8e7);background-size:200% 200%;animation:bgShift 12s ease infinite}
+main{min-height:100vh;display:grid;place-items:center;padding:34px 15px;position:relative;isolation:isolate}
+.glow{position:fixed;border-radius:50%;filter:blur(3px);opacity:.45;z-index:-1;animation:blob 9s ease-in-out infinite alternate}
+.glow.one{width:240px;height:240px;background:#ffb4c9;top:-70px;right:-65px}
+.glow.two{width:290px;height:290px;background:#eeb6d4;bottom:-100px;left:-90px;animation-delay:-4s}
+.card{width:min(690px,100%);padding:clamp(25px,6vw,54px);text-align:center;border:2px solid #fff9;border-radius:34px;background:#ffffffb8;box-shadow:0 22px 70px #a54d7130;backdrop-filter:blur(12px);position:relative;overflow:hidden;animation:cardIn 1s cubic-bezier(.2,.8,.2,1) both}
+.card:before{content:"";position:absolute;inset:9px;border:1px dashed #ee9eb8;border-radius:26px;pointer-events:none}
+.gift-scene{height:180px;width:230px;max-width:100%;margin:0 auto 8px;position:relative;display:flex;align-items:flex-end;justify-content:center}
+.gift-box{width:116px;height:78px;position:absolute;bottom:13px;left:50%;transform:translateX(-50%);border-radius:9px 9px 13px 13px;background:linear-gradient(90deg,#ef83a7,#ffbfd0 48%,#e9789e);box-shadow:0 13px 20px #c85c8130;z-index:2}
+.gift-box:before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);height:100%;width:17px;background:#ffe3eb}
+.gift-box span{position:absolute;z-index:2;left:50%;top:24px;transform:translateX(-50%);font-size:24px;color:#d45b84}
+.gift-lid{position:absolute;z-index:4;bottom:84px;left:50%;width:137px;height:24px;transform:translateX(-50%);border-radius:8px;background:linear-gradient(90deg,#df6f96,#ffc4d5,#df6f96);animation:lidPop 3.8s ease-in-out infinite;transform-origin:15% 100%}
+.gift-bow{position:absolute;z-index:5;bottom:100px;left:50%;transform:translateX(-50%);font-size:35px;animation:bowWiggle 2s ease-in-out infinite}
+.rose{position:absolute;z-index:3;font-size:29px;opacity:0;filter:drop-shadow(0 5px 5px #d36a8b44);animation:roseFly 3.8s ease-out infinite}
+.rose-a{left:calc(50% - 48px);bottom:90px;--x:-65px;--y:-105px;animation-delay:.1s}
+.rose-b{left:calc(50% - 8px);bottom:92px;--x:15px;--y:-135px;animation-delay:.35s}
+.rose-c{left:calc(50% + 25px);bottom:90px;--x:76px;--y:-100px;animation-delay:.6s}
+.rose-d{left:calc(50% - 18px);bottom:92px;--x:-5px;--y:-155px;animation-delay:.85s}
+@keyframes roseFly{0%,8%{opacity:0;transform:translate(0,0) scale(.45) rotate(-20deg)}18%{opacity:1}72%{opacity:1;transform:translate(var(--x),var(--y)) scale(1.12) rotate(22deg)}100%{opacity:0;transform:translate(calc(var(--x)*1.18),calc(var(--y)*1.2)) scale(.75) rotate(45deg)}}
+@keyframes lidPop{0%,12%,100%{transform:translateX(-50%) rotate(0)}20%,58%{transform:translate(-50%,-25px) rotate(-12deg)}75%{transform:translateX(-50%) rotate(0)}}
+@keyframes bowWiggle{0%,100%{transform:translateX(-50%) rotate(0)}30%,65%{transform:translate(-50%,-15px) rotate(-13deg)}}
+h1{font-family:'Amiri',serif;font-size:clamp(38px,8vw,59px);line-height:1.35;color:#b94e76;margin:6px 0}
+.subtitle{font-size:17px;color:#a45b78;margin:0}
+.sparkle{display:inline-block;animation:twinkle 1.7s ease-in-out infinite}
+.rule{height:2px;width:100px;margin:23px auto;background:linear-gradient(90deg,transparent,#ed91ae,transparent)}
+.lead{font-size:19px;line-height:2;color:#87516a;margin:0 auto 18px;max-width:470px}
+button{position:relative;z-index:2;border:0;border-radius:50px;padding:15px 27px;background:linear-gradient(135deg,#f7a9c1,#e8799e);color:white;font:800 17px 'Tajawal',sans-serif;box-shadow:0 9px 22px #dc709455;cursor:pointer;transition:transform .25s,box-shadow .25s}
+button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 13px 28px #dc709477}
+button:active{transform:scale(.97)}
+#letter{display:none;text-align:right;margin-top:27px;padding:23px 22px;border-radius:23px;background:#fff7fa;border:1px solid #f6c5d5;line-height:2.05;font:21px/2.05 'Amiri',serif;color:#704158;white-space:pre-line;animation:letterIn .8s ease both}
+.signature{text-align:left;color:#c05c82;font:700 17px 'Tajawal',sans-serif;margin-top:16px}
+.footer{margin-top:23px;font-size:14px;color:#a86c83}
+.tiny{display:inline-block;animation:heartbeat 1.4s ease-in-out infinite}
+.float{position:fixed;top:-40px;z-index:5;pointer-events:none;animation:fall linear forwards;will-change:transform}
+.star{position:fixed;color:#fff;z-index:-1;animation:twinkle 2.4s ease-in-out infinite}
+@keyframes bgShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes cardIn{from{opacity:0;transform:translateY(25px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+@keyframes twinkle{0%,100%{opacity:.45;transform:scale(.8) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(15deg)}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(420deg);opacity:.12}}
+@keyframes letterIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blob{to{transform:translate(25px,-25px) scale(1.13)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="glow one"></div><div class="glow two"></div>
+<main>
+<section class="card">
+  <div class="gift-scene" id="giftScene" aria-label="صندوق هدية تخرج منه الورود">
+    <div class="rose rose-a">🌹</div><div class="rose rose-b">🌹</div>
+    <div class="rose rose-c">🌷</div><div class="rose rose-d">🌹</div>
+    <div class="gift-lid"></div>
+    <div class="gift-box"><span>♡</span></div>
+    <div class="gift-bow">🎀</div>
+  </div>
+  <h1>إلى زهرتي الحلوة</h1>
+  <p class="subtitle"><span class="sparkle">✨</span> من فيصل، بكل الحب والحنان <span class="sparkle">✨</span></p>
+  <div class="rule"></div>
+  <p class="lead">يا أجمل زهرة بأيامي…<br>سويت لج هالمكان الصغير حتى أگولج شكد إنتِ غالية على گلبي 💗</p>
+  <button id="open" type="button">افتحي رسالتج يا زهرتي 💌</button>
+  <article id="letter">إلى زهرتي ❤️
+
+أريدج تعرفين إن وجودج بحياتي من أحلى الأشياء اللي صارتلي. إنتِ مو مثل أي أحد، إلج مكان بگلبي ما يشبهه مكان.
+
+أحب ضحكتج وأحب سوالفج وأحب كل التفاصيل الصغيرة اللي تخصج. حتى أبسط شي منج يگدر يخلّي يومي أحلى.
+
+أريدج دائماً تكونين مرتاحة ومطمنة وياي. إذا تعبتي احچيلي وإذا ضايجتي لا تكتمين بقلبج. أتمنى أكون الشخص اللي تلگين يمّه راحتج واللي يسمعج ويفهمج بدون ما تحتاجين تشرحين هواي.
+
+مو لازم تكونين قوية بكل لحظة يا زهرتي. كوني على طبيعتج، بفرحتج وبهدوءج وبكل حالاتج. إنتِ غالية وتستاهلين كل الحنية والاهتمام.
+
+وإذا مرّ يوم مو حلو، أتمنى تتذكرين إن أكو قلب يتمنالج الخير ويفرح من يشوفج بخير.
+
+أحبج يا زهرتي، وأتمنى تبقين مبتسمة ومطمئنة دوم. 🌷
+    <div class="signature">من فيصل إلى زهرتي، بكل الحب ❤️</div>
+  </article>
+  <div class="footer">إنتِ أحلى وردة بحديقتي <span class="tiny">💗</span></div>
+</section>
+</main>
+<script>
+const symbols=['💗','💕','🌸','🌷','♡','✨'];
+function floatOne(){
+ const el=document.createElement('span');el.className='float';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ el.style.left=Math.random()*100+'vw';el.style.fontSize=(15+Math.random()*20)+'px';
+ el.style.opacity=(.45+Math.random()*.45).toFixed(2);el.style.setProperty('--drift',(Math.random()*150-75)+'px');
+ el.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(el);
+ setTimeout(()=>el.remove(),15000);
+}
+setInterval(floatOne,650);
+for(let i=0;i<15;i++){const s=document.createElement('span');s.className='star';s.textContent='✦';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.fontSize=(8+Math.random()*13)+'px';s.style.animationDelay=(Math.random()*3)+'s';document.body.appendChild(s)}
+document.getElementById('open').addEventListener('click',()=>{
+ document.getElementById('letter').style.display='block';
+ const b=document.getElementById('open');b.textContent='أحبج بنيتي ❤️';b.disabled=true;
+ for(let i=0;i<28;i++)setTimeout(floatOne,i*65);
+});
+</script>
+</body>
+</html>
